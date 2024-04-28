@@ -1,0 +1,197 @@
+/* --------------------------
+ * ROOT
+----------------------------- */
+:root {
+    /* Header */
+    --header-bg: #198754;
+
+    /* Sidebar */
+    --sidebar-nav-link: #767676;
+    --sidebar-nav-link-active: #23b370;
+}
+
+/* --------------------------
+ * HTML BASE
+----------------------------- */
+body {
+    min-height: 100vh;
+    line-height: 1.6;
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        sans-serif;
+    font-size: 13px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+    min-height: 90vh;
+}
+
+form, input, select {
+    font-size: 14px !important;
+}
+
+/* --------------------------
+ * TABLE
+----------------------------- */
+table.table > thead > tr > th {
+    background-color: #f3f3f3 !important;
+    text-transform: uppercase;
+    padding-left: 9px;
+    vertical-align: middle;
+}
+
+table.table > tbody > tr > td {
+    padding-left: 9px;
+    vertical-align: middle;
+}
+
+table.table > thead > tr > th:nth-child(1),
+table.table > thead > tr > th:last-child {
+    text-align: center;
+}
+
+/* --------------------------
+ * DATATABLE
+----------------------------- */
+.datatable {
+    overflow-x: hidden !important;
+}
+
+.datatable .dt-empty {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* --------------------------
+ * PAGINATION
+----------------------------- */
+.datatable ul.pagination {
+    --bs-pagination-padding-x: 0.55rem;
+    --bs-pagination-padding-y: 0.175rem;
+}
+
+.datatable ul.pagination .dt-paging-button.page-item.active a {
+    padding-bottom: 0.35rem;
+    background-color: #198754;
+    border: #000;
+}
+
+/* --------------------------
+ * HEADINGS
+----------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+/* --------------------------
+ * BUTTONS - BADGE
+----------------------------- */
+.badge {
+    text-decoration: none;
+    font-weight: normal;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+}
+
+button.badge {
+    border: 0;
+    display: block;
+}
+
+.badge.bg-success {
+    background-color: #23b370;
+}
+
+button.badge:active, button.badge:focus {
+    border: 0;
+}
+
+.list-button {
+    text-align: center;
+}
+
+.list-button > a, .list-button > button {
+    margin-bottom: 3px;
+    width: 100%;
+}
+
+.bg-soft-light, .btn-soft-light {
+    background-color: #9f9f9f !important;
+}
+
+.bg-soft-light:hover,
+.bg-soft-light:focus,
+.bg-soft-light:active,
+.btn-soft-light:hover,
+.btn-soft-light:focus,
+.btn-soft-light:active {
+    background-color: #989898 !important;
+}
+
+.modal-footer button {
+    text-transform: uppercase !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+button.btn-light {
+    background-color: #ececec !important;
+    border-color: #d2d2d2 !important;
+    color: #4e4e4e !important;
+}
+
+button.btn-light:hover,
+button.btn-light:focus,
+button.btn-light:active {
+    background-color: #dbdbdb !important;
+    border-color: #d6d6d6 !important;
+}
+
+button[disabled] {
+    cursor: default;
+    user-select: none;
+}
+
+/* --------------------------
+ * UTILITY CLASSES
+----------------------------- */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed;
+}
+
+.h-underline:hover {
+    text-decoration: underline;
+    color: #2ca0f9;
+}
+
+.mx-n4 {
+    color: #b3b3b3;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+/* --------------------------
+ * HIDING THINGS
+----------------------------- */
+.sa-commercial {
+    display: none;
+}
